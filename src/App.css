@@ -1,38 +1,323 @@
-.App {
+/* File: App.css */
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background: #fffefc;
+  color: #333;
+}
+
+.app {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header {
+  width: 100%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.5em;
+  color: #fb6f92;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #fb6f92;
+}
+
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid #f0f0f0;
+  scroll-margin-top: 40px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ffb3c6, #ffe5ec);
+  border-radius: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-header h3 {
+  margin: 0;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.task {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: #ff8fab;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #fb6f92;
+}
+.portfolio-gallery {
+  column-count: 4;       /* More columns to fill wide screens */
+  column-gap: 16px;      /* Gap between columns */
+  padding: 10px 0;
+  width: 100%;           /* Make sure it fills container width */
+}
+
+.portfolio-image {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  break-inside: avoid;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.portfolio-image:hover {
+  transform: scale(1.08); /* slightly bigger */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  position: relative;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .portfolio-gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-gallery {
+    column-count: 1;
+  }
+}
+
+
+/* About Section Layout */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 250px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-image img {
+  max-width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Contact Section */
+.contact-section {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-links {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+
+.social-icon {
+  font-size: 2.5rem; /* increased from 2rem to 3rem */
+  color: #ff8fab; /* pastel pink */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.social-icon :hover{
+  color: #fb6f92;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+.app {
+  animation: fadein 1s ease-out;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Table aesthetic for Terms - Soft Pink Theme */
+
+.terms-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: #fff0f5; /* light pink background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+}
+
+.terms-table thead {
+  background-color: #ffc0cb; /* medium pink */
+  color: #4a1c2a;
+}
+
+.terms-table th,
+.terms-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #fddde6;
+}
+
+.terms-table tbody tr:nth-child(even) {
+  background-color: #fff5f8; /* very soft alternating pink */
+}
+
+.terms-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.terms-table th {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+/* Pricing Table - Pink aesthetic, matching terms */
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: #fff0f5; /* light pink background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+}
+
+.pricing-table thead {
+  background-color: #ffc0cb; /* medium pink */
+  color: #4a1c2a;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #fddde6;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background-color: #fff5f8; /* very soft alternating pink */
+}
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table th {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
