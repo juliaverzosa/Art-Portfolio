@@ -1,7 +1,7 @@
 {
 
-  "homepage": "https://juliaverzosa.github.io/Art-Portfolio/",
-  "name": "my-portfolio",
+  "homepage": "https://juliaverzosa.github.io/Art-Portfolio",
+  "name": "art-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
