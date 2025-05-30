@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/juliaverzosa/Art-Portfolio/static/css/main.f3623059.chunk.css",
-    "main.js": "/juliaverzosa/Art-Portfolio/static/js/main.281d2e30.chunk.js",
-    "main.js.map": "/juliaverzosa/Art-Portfolio/static/js/main.281d2e30.chunk.js.map",
-    "runtime~main.js": "/juliaverzosa/Art-Portfolio/static/js/runtime~main.8a27d661.js",
-    "runtime~main.js.map": "/juliaverzosa/Art-Portfolio/static/js/runtime~main.8a27d661.js.map",
-    "static/js/2.d7bf948b.chunk.js": "/juliaverzosa/Art-Portfolio/static/js/2.d7bf948b.chunk.js",
-    "static/js/2.d7bf948b.chunk.js.map": "/juliaverzosa/Art-Portfolio/static/js/2.d7bf948b.chunk.js.map",
-    "static/js/3.68d536b4.chunk.js": "/juliaverzosa/Art-Portfolio/static/js/3.68d536b4.chunk.js",
-    "static/js/3.68d536b4.chunk.js.map": "/juliaverzosa/Art-Portfolio/static/js/3.68d536b4.chunk.js.map",
-    "index.html": "/juliaverzosa/Art-Portfolio/index.html",
-    "precache-manifest.e6e9e9aae73e88dea033681e6203f02b.js": "/juliaverzosa/Art-Portfolio/precache-manifest.e6e9e9aae73e88dea033681e6203f02b.js",
-    "service-worker.js": "/juliaverzosa/Art-Portfolio/service-worker.js",
-    "static/css/main.f3623059.chunk.css.map": "/juliaverzosa/Art-Portfolio/static/css/main.f3623059.chunk.css.map"
+    "main.css": "/Art-Portfolio/static/css/main.f3623059.chunk.css",
+    "main.js": "/Art-Portfolio/static/js/main.281d2e30.chunk.js",
+    "main.js.map": "/Art-Portfolio/static/js/main.281d2e30.chunk.js.map",
+    "runtime~main.js": "/Art-Portfolio/static/js/runtime~main.f7b82758.js",
+    "runtime~main.js.map": "/Art-Portfolio/static/js/runtime~main.f7b82758.js.map",
+    "static/js/2.d7bf948b.chunk.js": "/Art-Portfolio/static/js/2.d7bf948b.chunk.js",
+    "static/js/2.d7bf948b.chunk.js.map": "/Art-Portfolio/static/js/2.d7bf948b.chunk.js.map",
+    "static/js/3.68d536b4.chunk.js": "/Art-Portfolio/static/js/3.68d536b4.chunk.js",
+    "static/js/3.68d536b4.chunk.js.map": "/Art-Portfolio/static/js/3.68d536b4.chunk.js.map",
+    "index.html": "/Art-Portfolio/index.html",
+    "precache-manifest.ce09493dae7ec31af84a493d94fe5cd1.js": "/Art-Portfolio/precache-manifest.ce09493dae7ec31af84a493d94fe5cd1.js",
+    "service-worker.js": "/Art-Portfolio/service-worker.js",
+    "static/css/main.f3623059.chunk.css.map": "/Art-Portfolio/static/css/main.f3623059.chunk.css.map"
   }
 }
