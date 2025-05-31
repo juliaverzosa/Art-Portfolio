@@ -42,9 +42,12 @@ const App = () => {
         <FadeInSection>
           <section id="home" className="section home">
             <div className="hero">
+              
+            <div className="hero-content">
               <h2>Hi, I'm Monaria</h2>
-              <p>An illustrator, developer, and maker of delightful things.</p>
+              <p>Illustrator - Developer</p>
             </div>
+          </div>
           </section>
         </FadeInSection>
 
@@ -61,7 +64,7 @@ const App = () => {
                 </p>
               </div>
               <div className="about-image">
-                <img src="/images/monaria.jpg" alt="Monaria" />
+                <img src= {process.env.PUBLIC_URL + '/images/monaria.jpg'} alt="Monaria" />
               </div>
             </div>
           </section>
@@ -71,11 +74,11 @@ const App = () => {
           <section id="portfolio" className="section">
             <h2>Art Portfolio</h2>
             <div className="portfolio-gallery">
-              <img src="/images/art1.jpg" alt="Art 1" className="portfolio-image" />
-              <img src="/images/art2.jpg" alt="Art 2" className="portfolio-image" />
-              <img src="/images/art3.jpg" alt="Art 3" className="portfolio-image" />
-              <img src="/images/art4.jpg" alt="Art 4" className="portfolio-image" />
-              <img src="/images/art5.jpg" alt="Art 5" className="portfolio-image" />
+              <img src={process.env.PUBLIC_URL + '/images/art1.jpg' } alt="Art 1" className="portfolio-image" />
+              <img src={process.env.PUBLIC_URL + '/images/art2.jpg' } alt="Art 2" className="portfolio-image" />
+              <img src={process.env.PUBLIC_URL + '/images/art3.jpg' } alt="Art 3" className="portfolio-image" />
+              <img src={process.env.PUBLIC_URL + '/images/art4.jpg' } alt="Art 4" className="portfolio-image" />
+              <img src={process.env.PUBLIC_URL + '/images/art5.jpg' } alt="Art 5" className="portfolio-image" />
             </div>
           </section>
         </FadeInSection>

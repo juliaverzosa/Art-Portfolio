@@ -61,12 +61,38 @@ body {
   scroll-margin-top: 40px;
 }
 
+
+.home {
+  padding: 0;
+  margin: 0;
+}
+
 .hero {
+  height: 220px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 60px;
   background: linear-gradient(to right, #ffb3c6, #ffe5ec);
   border-radius: 20px;
 }
+
+.hero-logo {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.hero-overlay-logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 150px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
 
 .hero h2 {
   font-size: 2.5em;
@@ -320,4 +346,49 @@ button:hover {
 .pricing-table th {
   font-weight: bold;
   font-size: 1.1rem;
+}
+.about-section {
+  background-color: #ffe5ec;  /* soft pink */
+  border-radius: 20px;        /* rounded corners */
+  padding: 30px;              /* some padding inside */
+  margin: 20px auto;          /* spacing above and below, center horizontally */
+  max-width: 900px;           /* optional, controls max width */
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.3); /* subtle pinkish shadow */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1 1 300px; /* flexible, but at least 300px */
+}
+
+.about-image img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 15px; /* round the image corners too */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+/* Pink aesthetic scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* soft pink track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fb6f92; /* main pink */
+  border-radius: 10px;
+  border: 3px solid #ffe5ec; /* creates space around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff8fab; /* brighter pink on hover */
 }

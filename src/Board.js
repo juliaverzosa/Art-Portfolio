@@ -3,9 +3,9 @@ import React from 'react';
 import './Board.css';
 
 const tasks = [
-  { id: 1, title: '2 Characters Full Body - Exorblue', progress: 'In Progress' },
-  { id: 2, title: 'Bust Up Illustration - Mark & Lea', progress: 'To Do' },
-  { id: 3, title: 'Birthday Commission - Nyx', progress: 'Done' },
+  { id: 1, title: '2 Characters Full Body', progress: 'In Progress' },
+  { id: 2, title: 'Bust Up Illustration', progress: 'To Do' },
+  { id: 3, title: 'Birthday Commission', progress: 'Done' },
 ];
 
 const progressMap = {
